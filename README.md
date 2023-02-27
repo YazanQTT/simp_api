@@ -87,5 +87,3 @@ on UnauthorisedException {
 Feel free to reach out and open an issue if you encounter any problems.
 If you feel the library is missing a feature, please raise a ticket on Github and I'll look into it.
 Pull request are also welcome.
-
-# simp_api
