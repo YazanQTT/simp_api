@@ -1,3 +1,4 @@
-## 0.0.1 [27/02/2023]
+## 0.0.3 [01/03/2023]
 
-* Initial release of SimpApi
+* Dart format to `simp_api.dart` & `http_exception.dart`
+* Added a description.

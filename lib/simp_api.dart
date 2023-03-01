@@ -53,7 +53,8 @@ class SimpApi {
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }
@@ -98,7 +99,8 @@ class SimpApi {
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }
@@ -131,7 +133,6 @@ class SimpApi {
     }
   }
 
-
   /// ------------------- \\\
 
   Future<http.Response?>? _createRequest({
@@ -159,14 +160,16 @@ class SimpApi {
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }
     return responseJson ?? http.Response('', 500);
   }
 
-  Future<http.Response?>? _post(Uri url, Map<String, dynamic>? payload, Map<String, String>? header) async {
+  Future<http.Response?>? _post(Uri url, Map<String, dynamic>? payload,
+      Map<String, String>? header) async {
     http.Response? responseJson;
 
     try {
@@ -178,14 +181,16 @@ class SimpApi {
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }
     return responseJson ?? http.Response('', 500);
   }
 
-  Future<http.Response?>? _put(Uri url, Map<String, dynamic>? payload, Map<String, String>? header) async {
+  Future<http.Response?>? _put(Uri url, Map<String, dynamic>? payload,
+      Map<String, String>? header) async {
     http.Response? responseJson;
     try {
       responseJson = await http.put(
@@ -196,22 +201,25 @@ class SimpApi {
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }
     return responseJson ?? http.Response('', 500);
   }
 
-  Future<http.Response?>? _delete(Uri url, Map<String, dynamic>? payload, Map<String, String>? header) async {
+  Future<http.Response?>? _delete(Uri url, Map<String, dynamic>? payload,
+      Map<String, String>? header) async {
     http.Response? responseJson;
     try {
       responseJson =
-      await http.delete(url, headers: header, body: jsonEncode(payload));
+          await http.delete(url, headers: header, body: jsonEncode(payload));
     } on UnauthorisedException {
       throw UnauthorisedException('Check the requested URL');
     } on SocketException {
-      throw FetchDataException('Check your internet connection or a typo in $url');
+      throw FetchDataException(
+          'Check your internet connection or a typo in $url');
     } catch (error) {
       debugPrint('EasyApi error @ $url : $error');
     }

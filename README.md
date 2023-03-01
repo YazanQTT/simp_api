@@ -2,6 +2,14 @@
 
 A simp and easy package to use REST Api in **Flutter**.
 
+The simp_api package is a library for building RESTful APIs in Dart and Flutter applications. It provides a simple and intuitive interface for defining API endpoints and handling HTTP requests and responses.
+
+With simp_api, you can easily define your API routes, specify the HTTP methods, and handle incoming requests using functions that take in the request and return a response. The package also includes utilities for handling query parameters, request headers, and parsing JSON payloads.
+
+The simp_api package is designed to be lightweight and easy to use, making it a great choice for small to medium-sized projects. Additionally, it supports both synchronous and asynchronous handling of requests, allowing you to choose the approach that works best for your application.
+
+Overall, if you're building a Dart or Flutter application that requires a simple and straightforward way to define and handle RESTful APIs, simp_api is definitely worth checking out.
+
 ## Features 👇
 - `Make HTTP requests 🔥`
 - `Upload images 🔥`
